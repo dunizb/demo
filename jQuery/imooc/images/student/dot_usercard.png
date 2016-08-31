@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>慕课网</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="renderer" content="webkit">
+<meta property="qc:admins" content="77103107776157736375" />
+<meta property="wb:webmaster" content="c4f857219bfae3cb" />
+<meta http-equiv="Access-Control-Allow-Origin" content="*" />
+<meta http-equiv="Cache-Control" content="no-transform " />
+<meta name="keywords" content="慕课网，慕课官网，MOOC，移动开发，IT技能培训，免费编程视频，php开发教程，web前端开发，在线编程学习，html5视频教程，css教程，ios开发培训，安卓开发教程" />
+<meta name="description" content="慕课网（IMOOC）是学习编程最简单的免费平台。慕课网提供了丰富的移动端开发、php开发、web前端、html5教程以及css3视频教程等课程资源。它富有交互性及趣味性，并且你可以和朋友一起编程。" />
+
+
+
+<script type="text/javascript">
+
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1;};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p;}('!4(){3 6=a;3 l=4(){3 b,e=9 y("(^| )"+"c=([^;]*)(;|$)");j(b=h.g.z(e)){k w(b[2])}x{k a}};3 8=4(t){3 f=l();3 7=9 o();7.A(7.d()+B*i*i*r);h.g="c="+t+";s="+7.M()+";N=/;L=O.m";j(t&&t!=f){Q.P.G()}};3 5=9 E();5.H=4(){K(6);6=a;8(0)};5.J=4(){8(1)};6=I(4(){5.n="";8(1)},F);5.n=\'R://p.u.m/p/v/q/D.C?t=\'+9 o().d()}()',54,54,'|||var|function|imgobj|timer|exp|setcookie|new|null|arr|IMCDNS|getTime|reg|_0|cookie|document|60|if|return|getcookie|com|src|Date|static|common|1000|expires||mukewang|img|unescape|else|RegExp|match|setTime|24|png|logo|Image|3000|reload|onload|setTimeout|onerror|clearTimeout|domain|toGMTString|path|imooc|location|window|http'.split('|'),0,{}))
+
+</script>
+<script type="text/javascript">
+  var OP_CONFIG={"module":"error","page":"noexists"};
+  var isLogin = 0;
+var is_choice = "";
+  var seajsTimestamp="v=201606152021";
+  </script>
+
+
+<link rel="stylesheet" href="http://static.mukewang.com/static/css/??base.css,common/common-less.css,wrongpages.css?v=1466060000" type="text/css" />
+</head>
+<body >
+
+<div id="header">
+    <div class="page-container" id="nav">
+        <div id="logo" class="logo"><a href="/" target="_self" class="hide-text">慕课网</a></div>
+
+
+        <button type="button" class="navbar-toggle visible-xs-block js-show-menu" >
+            <i class="icon-menu"></i>
+        </button>
+        <ul class="nav-item">
+                                <li class="set-btn visible-xs-block"><a href="/user/newlogin" target="_self">登录</a> / <a href="/user/newsignup" target="_self">注册</a></li>
+                                <li>
+                    <a href="/course/list"  target="_self">课程</a>
+                </li>
+                <li>
+                    <a href="http://coding.imooc.com" target="_self">实战<i class="icn-new"></i></a>
+                </li>
+                <li><a href="/course/program"  target="_self">计划</a></li>
+                <li><a href="/wenda"  target="_self">猿问</a></li>
+                <li><a href="/article"  target="_self">手记</a></li>
+                
+        </ul>
+
+                <div id="login-area">
+            <ul class="header-unlogin clearfix">
+                <li class="header-app">
+                    <a href="/mobile/app" >
+                        <span class="icon-appdownload"></span>
+                    </a>
+                    <div class="QR-download">
+                        <p id="app-text">慕课网APP下载</p>
+                        <p id="app-type">iPhone / Android / iPad</p>
+                        <img src="/static/img/index/QR-code.jpg">
+                    </div>
+                </li>
+                <li class="header-signin">
+                    <a href="#" id="js-signin-btn">登录</a>
+                </li>
+                <li class="header-signup">
+                    <a href="#" id="js-signup-btn">注册</a>
+                </li>
+            </ul>
+        </div>
+                <!--
+        <div class="app-down-area r">
+            <a href="/mobile/app">
+                <i class="header-app-icon"></i>慕课APP
+            </a>
+        </div>
+        -->
+        
+        
+        <div class='search-warp clearfix' style='min-width: 32px; height: 60px;'>
+            <div class="search-area min" data-search="top-banner">
+                <input class="search-input" data-suggest-trigger="suggest-trigger" placeholder="请输入想搜索的内容..." type="text" autocomplete="off">
+                <input type='hidden' class='btn_search' data-search-btn="search-btn" />
+                <ul class="search-area-result" data-suggest-result="suggest-result">
+                </ul>
+            </div>
+            <div class='showhide-search' data-show='no'><i class='icon-search'></i></div>
+        </div>
+    </div>
+</div>
+
+
+<div id="main">
+
+
+<div class="wrong-warp">
+	<div class="broken-imgs">
+		<img src="/static/img/besorry.png" alt="抱歉" />
+	</div>
+	<div class="msg-wrap l">
+		<em class="errorInfo l">此页面无法访问......</em>
+		<a href="http://www.imooc.com/" class="beback">返回首页</a>
+
+	</div>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer" >
+    <div class="waper">
+        <div class="footerwaper clearfix">
+            <div class="followus r">
+                <a class="followus-weixin" href="javascript:;"  target="_blank" title="微信">
+                    <div class="flw-weixin-box"></div>
+                </a>
+                <a class="followus-weibo" href="http://weibo.com/u/3306361973"  target="_blank" title="新浪微博"></a>
+                <a class="followus-qzone" href="http://user.qzone.qq.com/1059809142/" target="_blank" title="QQ空间"></a>
+            </div>
+            <div class="footer_intro l">
+                <div class="footer_link">
+                    <ul>
+                        <li><a href="http://www.imooc.com/" target="_blank">网站首页</a></li>
+                        <li><a href="/about/job" target="_blank">人才招聘</a></li>
+                        <li> <a href="/about/contact" target="_blank">联系我们</a></li>
+                        <li><a href="http://yun.imooc.com/" target="_blank">慕课云</a></li>
+                        <li><a href="/corp/index" target="_blank">合作专区</a></li>
+                        <li><a href="/about/us" target="_blank">关于我们</a></li>
+                        <li> <a href="/about/recruit" target="_blank">讲师招募</a></li>
+                        <li> <a href="/user/feedback" target="_blank">意见反馈</a></li>
+                        <li> <a href="/about/friendly" target="_blank">友情链接</a></li>
+                    </ul>
+                </div>
+                <p>Copyright © 2016 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="J_GotoTop" class="elevator">
+    <a href="javascript:void(0)" class="elevator-top" style="display:none" title="返回顶部" id="backTop"><i class="icon-up2"></i></a>   
+    <a href="/user/feedback" class="elevator-msg" title="意见反馈"><i class="icon-feedback"></i></a>  
+    <a href="javascript:" class="elevator-app" title="app下载">
+      <i class="icon-appdownload"></i>
+      <div class="elevator-app-box"></div>
+    </a>
+    <a href="javascript:" class="elevator-weixin" title="官方微信">
+      <i class="icon-wxgzh"></i>
+      <div class="elevator-weixin-box"></div>
+    </a>    
+</div>
+
+
+
+<script type="text/javascript" src="/static/sea-modules/seajs/seajs/2.1.1/sea.js"></script>
+<script type="text/javascript" src="/static/sea_config.js?v=201606152021"></script>
+
+
+
+
+
+<div style="display: none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ff0cfcccd7b1393990c78efdeebff3968' type='text/javascript'%3E%3C/script%3E"));
+(function (d) {
+window.bd_cpro_rtid="rHT4P1c";
+var s = d.createElement("script");s.type = "text/javascript";s.async = true;s.src = location.protocol + "//cpro.baidu.com/cpro/ui/rt.js";
+var s0 = d.getElementsByTagName("script")[0];s0.parentNode.insertBefore(s, s0);
+})(document);
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+</div>
+</body>
+</html>

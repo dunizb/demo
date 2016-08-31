@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>实战课程_慕课网</title>
+    <meta name="keywords" content="慕课网,实战课程,慕课实战,MOOC实战,移动实战,php实战,web前端实战,html5实战课程,java实战,python实战" />
+    <meta name="description" content="看视频,敲代码,一气呵成。结合慕课网为你提供的云端学习工具,所见即所得。从此学习不一样" />
+    <link rel="stylesheet" href="css/coding.css"/>
+    <link href="css/lrtk.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <style>
+        body{overflow-x: hidden;}
+    </style>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            $(window).scroll(function() {
+            //page2动画
+                if($(window).scrollTop()>=100) {
+                    $(".gj-page2 h2").animate({
+                        "margin": "80px auto 35px",
+                        "opacity": 1
+                    }, 1000, function () {
+                        $(".gj-page2 .icon-line").animate({
+                            "opacity": 1
+                        });
+                        $(".gj-page2 .icon-1").animate({
+                            "opacity": 1
+                        }, function () {
+                            $(".gj-page2 .icon-2").animate({
+                                "top": "65px",
+                                "opacity": 1
+                            }, function () {
+                                $(".gj-page2 .icon-2").animate({
+                                    "top": "105px"
+                                }, 100, function () {
+                                    $(".gj-page2 .icon-2").animate({
+                                        "top": "85px"
+                                    }, 100, function () {
+                                        $(".gj-page2 p").animate({
+                                            "margin-top": 0,
+                                            "opacity": 1
+                                        });
+                                    });
+                                });
+                            });
+                        });
+                    });
+                }
+            //page3动画
+            if($(window).scrollTop()>=640) {
+                $(".gj-page3").animate({
+                    "opacity": 1
+                }, 1000)
+                $(".gj-page3 .icon-1").animate({
+                    "bottom": "50px",
+                    "opacity": 1
+                },1000);
+
+                $(".gj-page3 .icon-2").animate({
+                    "left": "130px",
+                    "opacity": 1,
+                }, 800)
+                $(".gj-page3 h2").animate({
+                    "margin": "80px auto 35px",
+                    "opacity": 1
+                }, 1000, function () {
+                    $(".gj-page3 .icon-line").animate({
+                        "opacity": 1
+                    }, function () {
+                        $(".gj-page3 p").animate({
+                            "top": "328px",
+                            "opacity": 1
+                        });
+                    });
+                });
+            }
+            //page4动画
+                if($(window).scrollTop()>=1280) {
+                    $(".gj-page4 ul").animate({
+                        "opacity": 1
+                    }, 1000);
+                    $(".gj-page4 span").animate({
+                        "width": "80px",
+                        "height": "70px"
+                    }, 1000, function () {
+                        $(".gj-page4 i").animate({
+                            "opacity": 1
+                        });
+                    });
+                    $(".gj-page4 h2").animate({
+                        "margin": "120px auto 35px",
+                        "opacity": 1
+                    }, 1000, function () {
+                        $(".gj-page4 .icon-line").animate({
+                            "opacity": 1
+                        }, function () {
+                            $(".gj-page4 p").animate({
+                                "margin-top": "30px",
+                                "opacity": 1
+                            });
+                        });
+                    });
+                }
+            //page5动画
+                if($(window).scrollTop()>=1920) {
+                    $(".gj-page5").animate({
+                        "opacity": 1
+                    }, 1000)
+                    $(".gj-page5 .icon-1").animate({
+                        "height": "100%"
+                    }, 1000);
+                    $(".gj-page5 h2").animate({
+                        "opacity": 1
+                    }, 1000, function () {
+                        $(".gj-page5 .icon-line").animate({
+                            "opacity": 1
+                        }, function () {
+                            $(".gj-page5 p").animate({
+                                "padding-top": 0,
+                                "opacity": 1
+                            })
+                        });
+                    });
+                }
+            });
+            //底部动画
+            $("#gj-footer .weixin").mouseenter(function () {
+                $(this).children().css("display","block");
+            });
+            $("#gj-footer .weixin").mouseleave(function () {
+                $(this).children().css("display","none");
+            });
+
+
+            clock($(".gj-page3 .icon-1 li:eq(0)"),10);
+            clock($(".gj-page3 .icon-1 li:eq(2)"),8);
+            clock($(".gj-page3 .icon-1 li:eq(4)"),3);
+            antiClock($(".gj-page3 .icon-1 li:eq(1)"),5);
+            antiClock($(".gj-page3 .icon-1 li:eq(3)"),5);
+
+            //顺时针封装函数
+            function clock(element,step){
+                var rotate = 0;
+                setInterval(function () {
+                    rotate +=step;
+                    if(rotate > 360){
+                        rotate = 0;
+                    }
+                    element.css("transform","rotate("+rotate+"deg)");
+                },30);
+            }
+            //逆时针封装函数
+            function antiClock(element,step){
+                var rotate = 0;
+                setInterval(function () {
+                    rotate -=step;
+                    if(rotate < -360){
+                        rotate = 0;
+                    }
+                    element.css("transform","rotate("+rotate+"deg)");
+                },30);
+            }
+
+
+
+//            $(".gj-page3 .icon-1 li").mouseenter(function () {
+//                var $that = $(this);
+//                timerId = setInterval(function () {
+//                    rotate +=10;
+//                    if(rotate > 360){
+//                        rotate = 0;
+//                    }
+//                    $that.css("transform","rotate("+rotate+"deg)");
+//                },30);
+//            });
+//            $(".gj-page3 .icon-1 li").mouseleave(function () {
+//                $(this).css("transform","rotate(0deg)");
+//                clearInterval(timerId);
+//            });
+        });
+    </script>
+</head>
+<body>
+    <div id="gj-top">
+        <div class="gj-header">
+            <div class="gj-logo">
+                <a href="index.html">慕课网实战课程</a>
+            </div>
+            <div class="gj-top-r">
+                <span id="cloud"></span>
+                <ul id="gj-top-nav">
+                    <li><a href="javascript:;">实战课程</a></li>
+                    <li><a href="student.html">学习体验</a></li>
+                    <li><a class="webide" href="zg_index.html">WebIDE</a></li>
+                    <li><a href="javascript:;">版本管理</a></li>
+                    <li><a href="cloud.html">云端服务</a></li>
+                    <li><a href="javascript:;">开始学习</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="gj-p1" class="gj-page1">
+        <div class="all" id='gj-box'>
+            <div class="screen">
+                <ul>
+                    <li><img src="images/coding/ban1.jpg" width="1423px" height="640px"/></li>
+                    <li><img src="images/coding/ban2.jpg" width="1423px" height="640px"/></li>
+                    <li><img src="images/coding/ban3.jpg" width="1423px" height="640px"/></li>
+                    <li><img src="images/coding/ban4.jpg" width="1423px" height="640px"/></li>
+                </ul>
+                <ol>
+                </ol>
+            </div>
+            <div id="arr"><span id="left">&lt;</span><span id="right">&gt</span>
+            </div>
+        </div>
+    </div>
+    <div class="gj-page2">
+        <div class="gj-container-w">
+            <h2>每门课都是真实商业案例</h2>
+            <div class="icon-line"></div>
+            <p>真实案例，真实场景，在实战中实践、操作、调试
+                <br/>
+            大牛带你体验BAT真实开发流程，所有开发过程一一为你呈现</p>
+            <div class="icon-1"></div>
+            <div class="icon-2"></div>
+        </div>
+    </div>
+    <div class="gj-page3">
+        <div class="gj-container-w">
+            <h2>强大的语言课程体系支持</h2>
+            <div class="icon-line"></div>
+            <p>学习环境与课程轻松对接，安装、调试、写入、部署、运行，一站式解决
+                <br/>
+                让你体验开发全流程
+            </p>
+            <ul class="icon-1">
+                <li class="icon-1-1">HTML5</li>
+                <li class="icon-1-2">PHP</li>
+                <li class="icon-1-3">JAVA</li>
+                <li class="icon-1-4">Python</li>
+                <li class="icon-1-5">Node.js</li>
+            </ul>
+            <div class="icon-2"></div>
+        </div>
+    </div>
+    <div class="gj-page4">
+        <div class="gj-container-w">
+            <h2>省去本地复杂的环境搭建</h2>
+            <div class="icon-line"></div>
+            <p>你可以告别在虚拟机中调试开发了</p>
+            <ul class="icon-4">
+                <li>
+                    <span class="icon-4-1"></span>
+                    <i>实战课程集成开发环境</i>
+                </li>
+                <li>
+                    <span class="icon-4-2"></span>
+                    <i>内置终端命令行</i>
+                </li>
+                <li>
+                    <span class="icon-4-3"></span>
+                    <i>编译你的应用程序</i>
+                </li>
+                <li>
+                    <span class="icon-4-4"></span>
+                    <i>通过云端服务输出效果</i>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="gj-page5">
+        <div class="gj-container-w">
+            <h2>云端学习可以这样简单</h2>
+            <div class="icon-1"></div>
+            <div class="icon-line"></div>
+            <p>看视频，敲代码，一气呵成。结合慕课网为你提供的云端学习工具，所见即所得。从此学习不一样</p>
+        </div>
+    </div>
+    <div class="gj-btn">
+        <div class="gj-btn-page">
+            <a href="student.html">继续了解学习体验</a>
+        </div>
+    </div>
+    <div id="gj-footer">
+        <div class="waper">
+            <div class="footer-wap clearfix">
+                <div class="footer-r">
+                    <a class="weixin" href="javascript:;">
+                        <div class="weixin-box"></div>
+                    </a>
+                    <a class="weibo" href="javascript:;"></a>
+                    <a class="qq" href="javascript:;"></a>
+                </div>
+                <div class="footer-l">
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="javascript:;">网站首页</a></li>
+                            <li><a href="javascript:;">人才招聘</a></li>
+                            <li><a href="javascript:;">联系我们</a></li>
+                            <li><a href="javascript:;">高校联盟</a></li>
+                            <li><a href="javascript:;">关于我们</a></li>
+                            <li><a href="javascript:;">讲师招募</a></li>
+                            <li><a href="javascript:;">意见反馈</a></li>
+                            <li><a href="javascript:;">友情链接</a></li>
+                        </ul>
+                    </div>
+                    <p>Copyright © 2015 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="actGotop"><a href="javascript:;" title="Top"></a></div>
+    <script src="js/animate-gj.js"></script>
+    <script>
+        //小火箭
+        $(function(){
+            $(window).scroll(function() {
+                if($(window).scrollTop() >= 100){ //向下滚动像素大于这个值时，即出现小火箭~
+                    $('.actGotop').fadeIn(300); //火箭淡入的时间，越小出现的越快~
+                }else{
+                    $('.actGotop').fadeOut(300); //火箭淡出的时间，越小消失的越快~
+                }
+            });
+            $('.actGotop').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);}); //火箭动画停留时间，越小消失的越快~
+        });
+        //
+        //导航栏筋斗云动画
+        var nav = document.getElementById("gj-top-nav");
+        var cloud = document.getElementById("cloud");
+        //声明标记
+        var target = 480;
+        //注册事件
+        for(var i=0;i<nav.children.length;i++){
+            var li = nav.children[i];
+            li.onmouseover = function () {
+                animate(cloud,{left:this.offsetLeft});
+            }
+            li.onmouseout = function () {
+                animate(cloud,{left:target});
+            }
+            li.onclick = function () {
+                target = this.offsetLeft;
+            }
+        }
+
+        //头部动画
+        //透明、缓动出现
+        var gjtop = document.getElementById("gj-top");
+        var gjheader = gjtop.children[0];
+        var gjnavul = document.getElementById("gj-top-nav");
+        //page1部分
+        var gjp1 = document.getElementById("gj-p1");
+        var p1h = gjp1.children[0].children[0];
+        var p1p = gjp1.children[0].children[1];
+        window.onload = function () {
+            //顶部刷新时才出现
+            if(window.scrollY===0){
+                gjheader.style.display = "block";
+                animate(gjheader,{"opacity":1,"top":0});
+            }
+        }
+
+        //注册滚动事件
+        window.onscroll = function () {
+            //移到顶部时才有效果
+            if(getScroll().scrollTop===0){
+                gjheader.style.display = "block";
+                animate(gjheader,{"opacity":1,"top":0});
+            }
+            if(getScroll().scrollTop>gjtop.offsetTop){
+                gjheader.className = "gj-header-scroll";
+            }else if(getScroll().scrollTop<gjtop.offsetHeight){
+                gjheader.className = "gj-header";
+            }
+
+        }
+
+        //轮播图
+        //准备工作，获取元素
+        var box = document.getElementById("gj-box");
+        var screen = box.children[0];
+        var arr = box.children[1];
+        var ul = screen.children[0];
+        var ol = screen.children[1];
+        var arrLeft = arr.children[0];
+        var arrRight = arr.children[1];
+        //点击箭头时记录索引
+        var index = 0;
+        //图片的宽度
+        var imgWidth = screen.offsetWidth;
+        //6.1 记录序号
+        var olIndex = 0;
+        //记录有多少张图片
+        var count = ul.children.length;
+        //1 动态创建ol
+        for(var i=0;i<count;i++){
+            var li = document.createElement("li");
+            ol.appendChild(li);
+//            li.innerText = i+1;
+        }
+        ol.children[0].className = "current";
+
+        //2 点击序号切换图片
+        for(i=0;i<ol.children.length;i++){
+            li = ol.children[i];
+            //记录对应索引
+            li.index = i;
+            //注册事件
+            li.onclick = function () {
+                for(i=0;i<ol.children.length;i++){
+                    li = ol.children[i];
+                    //移除类样式
+                    li.removeAttribute("class");
+                }
+                //当前li高亮显示
+                this.className = "current";
+                //动画
+                animate(ul,{"left":-this.index*imgWidth});
+                //7.点击序号的时候，让索引同步
+                olIndex = index = this.index;
+            }
+        }
+        //3 点击箭头切换图片
+        box.onmouseover  = function () {
+            arr.style.display = "block";
+            //5.2鼠标经过停止自动播放
+            clearInterval(timerId);
+        }
+        box.onmouseout = function () {
+            arr.style.display = "none";
+            //5.3鼠标离开开始自动播放
+            timerId = setInterval(function () {
+                arrRight.click();
+            },2000)
+        }
+        //下一张
+        arrRight.onclick = function () {
+            //如果是最后一张，切换到第一张
+            if(index ===count){
+                index = 0;
+                ul.style.left = "0px";
+            }
+            index++;
+            animate(ul,{"left":-index*imgWidth});
+            //6.2切换下一个序号
+            if(olIndex<count-1){
+                olIndex++;
+            }else{
+                //最后一个时 = 0
+                olIndex = 0;
+            }
+            //清除ol中所有li高亮显示
+            for(i = 0; i < ol.children.length; i++) {
+                li = ol.children[i];
+                li.removeAttribute("class");
+            }
+            //让当前li高亮显示
+            ol.children[olIndex].className = "current";
+
+        }
+        //上一张
+        arrLeft.onclick = function () {
+            //如果等于0，切换到最后一张
+            if(index===0){
+                index = count;
+                ul.style.left = -index*imgWidth+"px";
+            }
+            index--;
+            animate(ul,{"left":-index*imgWidth});
+            //6.3切换上一个序号
+            if(olIndex>0){
+                olIndex--;
+            }else{
+                //第一张时切换到最后
+                olIndex = count-1;
+            }
+            //清除ol中所有li高亮显示
+            for(i = 0; i < ol.children.length; i++) {
+                li = ol.children[i];
+                li.removeAttribute("class");
+            }
+            //让当前li高亮显示
+            ol.children[olIndex].className = "current";
+        }
+
+        //4 无缝滚动  -- 修改上一张和下一张的代码
+        //4.1克隆第一张图放在最后
+        var firstLi = ul.children[0];
+        var cloneLi = firstLi.cloneNode(true);
+        //追加到ul里
+        ul.appendChild(cloneLi);
+
+        //5 自动播放
+        //5.1设置定时器
+        var timerId = setInterval(function () {
+            arrRight.click();
+        },2000)
+    </script>
+</body>
+</html>
