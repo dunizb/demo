@@ -158,7 +158,7 @@ s, i, em {
     position: relative;
 }
 .slogan img {
-    width: 1214px;
+    width: 100%;
 }
 .slogan h1 {
     position: absolute;
