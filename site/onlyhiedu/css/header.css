@@ -1,0 +1,88 @@
+#header {
+  width: 1100px;
+  margin: 20px auto;
+  position: relative;
+  z-index: 3000;
+}
+#header .booknow {
+  cursor: pointer;
+}
+.top {
+  margin-bottom: 10px;
+  height: 48px;
+}
+.top img {
+  height: 32px;
+  vertical-align: middle;
+}
+.top span {
+  position: relative;
+  display: inline-block;
+  height: 48px;
+  line-height: 48px;
+  color: #9c9c9c;
+  text-decoration: none;
+  margin-left: 20px;
+  padding-left: 35px;
+  cursor: pointer;
+  background: url(../images/header/weixin.png) left center no-repeat;
+}
+.top span:hover #codepic {
+  display: block;
+}
+.top .btn {
+  float: right;
+  text-align: center;
+  background-color: #f00;
+  display: inline-block;
+  font-size: 15px;
+  padding: 9px 20px;
+  border-radius: 8px;
+  background-color: #f27164;
+  text-decoration: none;
+  color: #ffffff;
+}
+.top #codepic {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 48px;
+  width: 180px;
+  height: 180px;
+  background: url(../images/header/code.jpg);
+  background-size: 100%;
+}
+.top:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+.bottom {
+  height: 48px;
+  font-size: 20px;
+}
+.bottom * {
+  float: left;
+}
+.bottom img {
+  height: 100%;
+}
+.bottom a {
+  line-height: 48px;
+  color: #9c9c9c;
+  text-decoration: none;
+  margin-left: 20px;
+  width: 100px;
+  text-align: center;
+}
+.bottom:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+.chosed {
+  background: url(../images/header/chosed.png) left center no-repeat;
+  color: #ffffff !important;
+}

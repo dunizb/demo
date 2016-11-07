@@ -1,0 +1,211 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{ margin:0; padding:0; line-height:24px; font-size:12px;font-family: Arial, Helvetica, sans-serif, "宋体"; color:#606060}
+ul,li,p{ margin:0; padding:0; list-style:none}
+img{ border:0;}
+a,a:visited{ color:#707070; text-decoration:none}
+a:focus{ outline:none}
+a:hover{ color:#f36c21;text-decoration:none}
+h1,h2,h3{ margin:0; padding:0}
+.clear{ clear:both; line-height:0; font-size:0; overflow:hidden}
+.show{ display:block !important}
+
+.wrap{ width:1000px; margin:0 auto}
+.header{ background:url("../img/headBg.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/headBg.gif*/ bottom repeat-x #fff; height:81px; position:relative; z-index:200}
+.logo{ width:175px; height:46px; background:url("../img/logo.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/logo.gif*/ no-repeat; float:left; display:inline-block; position:relative; top:17px; left:20px}
+.menu{ background:url("../img/menuBg.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/menuBg.gif*/ repeat-x #fff; height:38px; padding-bottom:5px; line-height:38px; position:relative; z-index:30; margin-bottom:7px}
+.menu ul{ margin-left:25px}
+.menu ul li{ width:135px; display:inline; padding-right:2px; float:left; text-align:center; background:url("../img/menuLine.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/menuLine.gif*/ right 8px no-repeat; position:relative}
+.menu ul li a{ color:#fff !important;  display:block; width:135px; height:38px; font-size:14px; font-weight:bold}
+.menu ul li a span{ background:url("../img/menuArr1.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/menuArr1.gif*/ 100px 17px no-repeat; display:block; width:100%; height:100%; cursor:pointer}
+.menu ul li a:hover span,.menu ul li .on span{ background:url("../img/menuArr2.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/menuArr2.gif*/ 100px 17px no-repeat; display:block; width:100%; height:100%;}
+.menu ul li a:hover,.menu ul li .on{ color:#ffc6a3 !important; background:url("../img/menuHover.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/menuHover.gif*/ left no-repeat;}
+.menu ul li .sMenuMid{ position:absolute; top:38px; left:0; width:100%; background:url("../img/sMenuBg.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/sMenuBg.gif*/ center repeat-y;filter:alpha(opacity=90); opacity: 0.9; display:none}
+.menu ul li .sMenuTop{ background:url("../img/sMenuBg.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/sMenuBg.gif*/ left top no-repeat;}
+.menu ul li .sMenuBot{ background:url("../img/sMenuBg.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/sMenuBg.gif*/ right bottom no-repeat;}
+.menu ul li div a{ display:block; width:100%; height:29px; line-height:29px; font-size:12px; color:#fff ; font-weight:normal; position:relative;  }
+.menu ul li div a:hover{ background:#fda080; color:#fff !important; }
+
+/*
+.footer { background:url(../img/footer_bg.jpg) top center repeat-x #f3f3f3; padding:10px 0 20px 0; margin-top:20px }
+.footer p{ width:1000px; margin:5px auto; text-align:center; color:#707070}
+.footer p img { border:1px solid #DDDEDE}
+.footer .footLinks {  }
+.footer p a{ color:#555555 !important; margin:0 10px}
+.footLinks a:hover{ color:#ff6000 !important}
+*/
+
+.topBanner{ height:120px; margin:0 auto; background-position: top center; background-repeat:no-repeat; border-bottom:1px solid #ee734e;background-image: url("../img/banner_01.jpg")/*tpa=http://www.onlyhiedu.com/static/home/static/img/banner_01.jpg*/}
+.topBanner div{ width:1000px; margin:0 auto; background-position:-460px 0; height:100%  }
+.topBanner div a { display:block; width:100%; height:100%; }
+.w230{ width:230px}
+.w760{ width:760px}
+.w300{ width:300px}
+.w690{ width:690px}
+.fl{ float:left}
+.fr{ float:right}
+.leftMenuTop{ height:174px; background-image:url("../img/leftMenuTop.jpg")/*tpa=http://www.onlyhiedu.com/static/home/static/img/leftMenuTop.jpg*/}
+.top1{ background-position:0 0}
+.top2{ background-position:0 -174px}
+.top3{ background-position:0 -348px}
+.top4{ background-position:0 -522px}
+.top5{ background-position:0 -696px}
+.leftMenu{ margin-left:23px; width:168px}
+.leftMenu li {background:url("../img/leftMenuBg.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/leftMenuBg.gif*/ top center no-repeat;padding-top:6px;line-height:36px; clear:both; min-height:36px }
+.leftMenu a{   font-size:14px; color:#bfbfbf !important; font-weight:bold; margin-left:10px;  width:110px; height:36px;overflow:hidden; float:left }
+.leftMenu a:hover { color:#f36c21 !important }
+.leftMenu .on{  color:#3f3f3f !important}
+.leftMenu li ul { display:none; width:100% }
+.leftMenu li ul li { height:36px }
+.leftMenu li ul li a{ margin-left:30px; display:block; font-size:13px; display:inline }
+.leftMenuArr { background:url("../img/arr_2.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/arr_2.gif*/ top no-repeat; width:20px !important; height:14px !important; line-height:0 !important;float:right !important;   margin:10px 10px 0 10px; padding:0 !important }
+.leftMenuArr2 { background:url("../img/arr_2.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/arr_2.gif*/ bottom no-repeat !important;}
+
+.path{ float:right; background:url("../img/ico_1.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/ico_1.gif*/ left no-repeat; height:24px; line-height:24px; padding-left:15px; color:#979797; margin:5px 20px 0 0 }
+.path a,.path span{ margin: 0 5px; color:#979797}
+.richText{ clear:both; padding:5px 10px 0 0;  font-size:14px}
+.mh600 {min-height:600px; height:auto !important; height:600px; clear:both }
+h2{ background:url("../img/ico_2.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/ico_2.gif*/ left center no-repeat; font-size:16px; color:#3f3f3f; line-height:30px; padding-left:20px; height:30px; display:block}
+h3 span{ float:right;}
+.f14 { font-size:14px; color:#3f3f3f}
+h3{ background:url("../img/ico_3.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/ico_3.gif*/ 5px center no-repeat; font-size:16px; color:#6b6b6b; line-height:30px; padding-left:20px; height:30px; display:block}
+.phone{ font-size:24px; }
+.table_1 { color:#000 }
+.table_1 th, .table_1 td { padding:12px 0 ; vertical-align:top}
+.table_1  th{ background:url("../img/ico_3.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/ico_3.gif*/ left 20px no-repeat; text-align:left; padding-left:15px; font-size:16px; color:#fe7a11; width:120px }
+.d1_1{ background:url("../img/dep_1_2.jpg")/*tpa=http://www.onlyhiedu.com/static/home/static/img/dep_1_2.jpg*/ left bottom no-repeat; min-height:383px; height:auto !important; height:383px}
+.d1_1 p{ float:right; width:440px; margin-bottom:24px; text-indent:2em}
+.d1_1 p.p1{ float:right; width:420px; margin-bottom:24px; text-indent:2em}
+.d1_1 a{ color:#da440c}
+.d1_1 a:hover{ text-decoration:underline}
+.c1_1{ background:url("../img/c_1_1.jpg")/*tpa=http://www.onlyhiedu.com/static/home/static/img/c_1_1.jpg*/ right 15px no-repeat;}
+.c1_1 p{ width:510px; margin-bottom:50px;}
+.c1_2{ background:url("../img/c_1_2.jpg")/*tpa=http://www.onlyhiedu.com/static/home/static/img/c_1_2.jpg*/ left bottom no-repeat; padding-bottom:1px}
+.c1_3{ margin-left:150px}
+.c3_1 {background:url("../img/c_3_1.jpg")/*tpa=http://www.onlyhiedu.com/static/home/static/img/c_3_1.jpg*/ right 20px no-repeat; padding-right:335px; padding-bottom:140px}
+.c3_1 p { text-indent:2em; margin-top:30px }
+.c7_1 img{ margin:3px 0  }
+.c7_1 h3 { margin:20px 0 10px 0 }
+.c7_1 p { margin-bottom:20px }
+.a1_1 {background:url("../img/a_1_1.jpg")/*tpa=http://www.onlyhiedu.com/static/home/static/img/a_1_1.jpg*/ left top no-repeat; padding:50px 0 }
+.a1_1 p { margin-bottom:64px;}
+
+.imgList { width:100%; margin-top:20px }
+.imgList li { width:200px; float:left; margin:0 80px 10px 0; display:inline; height:190px}
+.imgList li a{ display:block; width:100%; height:100%;}
+.imgList li div{  width:200px; height:130px; margin:0 auto 10px auto; cursor:pointer; overflow:hidden;z-index:-1; position:relative}
+.imgList li div span { display:block; position:absolute; width:200px; height:130px; background:url("../img/video_arr1.png")/*tpa=http://www.onlyhiedu.com/static/home/static/img/video_arr1.png*/;
+    _background:none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src='../Images/video_arr1.png'); 
+   }
+.imgList li a:hover div span { display:block; position:absolute; width:200px; height:130px; background:url("../img/video_arr2.png")/*tpa=http://www.onlyhiedu.com/static/home/static/img/video_arr2.png*/;
+_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../Images/video_arr2.png" ,sizingMethod="crop");  
+}
+.imgList li div img{ width:200px; height:130px;}
+.imgList li span{ width:100%; display:block; text-align:center; height:48px; overflow:hidden; cursor:pointer; font-weight:bold}
+
+.pages{ float:right; margin:10px 20px 10px 0; color:#848484;display:inline }
+.pages a{  display:inline-block; color:#848484 !important; margin:0 5px; width:28px; height:22px; text-align:center; line-height:22px; background:url("../img/pages.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/pages.gif*/ top right ; font-weight:bold}
+.pages a.pageUp,.pages a.pageDown{ width:58px; background-position:left top }
+.pages a.pageUp:hover,.pages a.pageDown:hover{ background-position:left bottom }
+.pages a:hover,.pages a.on{ background-position: bottom right; color:#fff !important;}
+.pages input{ width:32px; height:20px; border:1px solid #ddd; margin:0 5px; padding:0; text-align:center}
+.pages button{ border:none;background:url("../img/pages.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/pages.gif*/ left top; width:58px; height:22px; line-height:22px; cursor:pointer; font-weight:bold; color:#848484}
+.pages button:hover{ border:none;background:url("../img/pages.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/pages.gif*/ left bottom ; color:#fff}
+
+.newsList{ padding:0 10px 0 0}
+.newsList li{ height:76px; overflow:hidden; padding:15px 0px}
+.newsList li a{ display:block; width:100%; height:100%; overflow:hidden}
+.newsList li a:hover h3 { color:#f36c21 }
+.newsList h3{ font-size:14px; width:580px; float:left; display:block; cursor:pointer}
+.newsList .newsTime{ float:right; width:150px; color:#5a8ed1; text-align:right}
+.newsList p{ line-height:18px; margin-top:12px}
+
+.bigeyes{ position:relative; margin:-7px auto 0 auto; width:100%; height:470px; overflow:hidden}
+.bigeyes #banner {width:100%;height:470px; position:relative }
+.bigeyes #banner img{width:100%;}
+.bigeyes #btn {display: inline;float:right;margin:-30px 50% 0 auto;position:relative;z-index:20;}
+.bigeyes #btn a {background:url("../img/bigeye_page_1.png")/*tpa=http://www.onlyhiedu.com/static/home/static/img/bigeye_page_1.png*/;
+_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../Images/bigeye_page_1.png" ,sizingMethod="crop");  
+float:left;width:14px;height:14px;line-height:14px; margin:0 2px;position:relative; cursor:pointer}
+.bigeyes #btn a:hover,#btn a.activeSlide {background:url("../img/bigeye_page_2.png")/*tpa=http://www.onlyhiedu.com/static/home/static/img/bigeye_page_2.png*/;
+_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../Images/bigeye_page_2.png" ,sizingMethod="crop");  }
+#banner { width:100% }
+#banner div { width:100%; height:470px; background-position:top center; background-repeat:no-repeat; position:absolute; }
+#banner div a { display:block; width:100%; height:100% }
+
+.newsAttr { padding:30px 20px 20px 0px ; }
+.newsAttr h3 {  font-size:16px; width:500px; float:left; display:block; padding-left:30px }
+.newsAttr .date { float:right; width:140px; color:#5a8ed1; text-align:right }
+
+.imgList2 li { margin:20px 0 }
+.imgList2 li img{ width:300px; height:120px }
+.newsList1 { font-size:14px; margin:10px 0}
+.newsList1 li { width:300px; height:24px; overflow:hidden; clear:both }
+.newsList1 li a { display:block; width:100%; height:24px }
+.newsList1 li span { float:left; display:block; width:210px; cursor:pointer}
+.newsList1 li b { float:right; display:block; width:80px; font-weight:normal; cursor:pointer}
+
+.idx_block { background:url("../img/line_1.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/line_1.gif*/ right center no-repeat; float:left; width:302px; height:86px; padding:12px 16px 12px 15px; margin:10px 0 }
+.idx_block img { width:302px; height:26px; }
+.idx_block ul { height:72px; overflow:hidden; margin:5px 0;}
+.idx_block ul li{ float:left; height:24px; margin:0 14px;line-height:24px;word-break:keep-all; font-size:14px; display:inline; color:#888ba0 }
+.idx_block ul li a { color:#888ba0}
+.idx_block ul li a:hover,.idx_block ul li .more { color:#e77a19}
+
+.topLink { float:right; width:245px; position:relative; margin:10px 0; color:#999999 }
+.weibo_1 { background:url("../img/weibo.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/weibo.gif*/ left top; width:19px; height:16px; display:inline-block; vertical-align:text-bottom; margin-right:5px }
+.weibo_1:hover { background-position:left bottom }
+.weibo_2 { background:url("../img/weibo.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/weibo.gif*/ right top; width:19px; height:16px; display:inline-block;  vertical-align:text-bottom; margin-right:5px }
+.weibo_2:hover { background-position:right bottom }
+
+.otherWeb{  width:122px; display:inline-block; position:relative; top:-2px;*float:right; *top:-24px; _top:-20px}
+.soWeb { background:url("../img/soWebTop.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/soWebTop.gif*/ top center no-repeat; height:14px; line-height:14px; font-size:1px; overflow:hidden; cursor:pointer ; position:relative; z-index:1 ; top:5px }
+.soWeb2 { background:url("../img/soWebTop.gif")/*tpa=http://www.onlyhiedu.com/static/home/static/img/soWebTop.gif*/ bottom center no-repeat;}
+.soWebMid { display:none; position:absolute; width:120px; border:1px solid #ededed; background:#FFF;filter:alpha(opacity=80);  opacity: 0.8;  -moz-opacity:0.8;padding-top:20px; top:0}
+.soWebMid ul li { text-align:left; padding:0 10px; line-height:24px}
+.soWebMid ul li a{ padding-left:4px; color:#999999 }
+.soWebMid ul li a:hover{ color:#f36c21}
+
+.school_1 { clear:both; font-size:10px; }
+.school_1 .t { width:70px; overflow:hidden; float:left; font-size:14px }
+.school_1 .d { float:left; margin-bottom:3px; width:930px}
+.school_1 .d a { display:inline-block; width:80px; height:24px; text-align:center; color:#bfbfbf ; font-size:14px}
+.school_1 .d a.on ,.school_1 .d a:hover,.school_1 .d .sd a:hover,.school_1 .d .sd a.on{ color:#ef7a54 }
+.school_1 .d .sd { margin-top:3px}
+.school_1 .d .sd a { color:#3f3f3f;font-size:12px}
+.schoolInfo { font-size:14px }
+.schoolInfo p{ margin-top:5px }
+.map { width:710px; height:650px; float:left; margin-top:15px }
+.mapList {  margin:15px 0 0 20px; float:left; width:270px; font-size:14px; display:inline}
+.mapList ul { margin-bottom:10px}
+.mapList li {  margin-bottom:10px; }
+.mapList li h3 { height:22px; line-height:22px }
+.mapList li p {  display:block; height:48px; overflow:hidden;}
+.mapList li a:hover h3 { color:#f36c21}
+.mapList li .school { font-weight:bold}
+.pages2  a{ display:block; width:16px; height:16px; line-height:16px; background:#a19dad; color:#fff !important; margin:0 2px; float:left; text-align:center}
+.pages2 a:hover,.pages2  a.active { background:#ffb245;}
+
+.bigeyes2 { margin:10px 0 20px 0 ; width:1000px; height:400px}
+.bigeyes2 img { width:1000px; height:400px }
+.bigeyes2 #banner { width:1000px; height:400px }
+.bigeyes2 #btn {display: inline;float:right;margin:-30px 50% 0 auto;position:relative;z-index:10;}
+.bigeyes2 #btn a {background:url("../img/bigeye_page_1.png")/*tpa=http://www.onlyhiedu.com/static/home/static/img/bigeye_page_1.png*/;
+_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../Images/bigeye_page_1.png" ,sizingMethod="crop");  
+float:left;width:14px;height:14px;line-height:14px; margin:0 2px}
+.bigeyes2 #btn a:hover,#btn a.activeSlide {background:url("../img/bigeye_page_2.png")/*tpa=http://www.onlyhiedu.com/static/home/static/img/bigeye_page_2.png*/;
+_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../Images/bigeye_page_2.png" ,sizingMethod="crop");  }
+.map2 { height:280px }
+
+.adMod {position: absolute; top: 0%; left: 50%; width: 302px; height:152px; display: block; z-index: 1000!important; opacity:0;}
+.adMod .inner {position: absolute; top: -100%; left: -100%; background: #fff; width: 604px; height: 304px; display: block; box-shadow: 0 0 10px #888; text-align: center; }
+.adMod a {float:left; width: 600px; height: 300px; border: 2px solid #fff; overflow: hidden;}
+.adMod img {width: 100%; height: 100%;}
+.adMod .closeIcon {position: absolute; top:0; right: 0; z-index: 2; width: 16px; height: auto; padding:5px; text-align: center; font-weight: bold; background: #fff; color: #999; cursor: pointer; border: none}
+.adMod .closeIcon:hover {color:#fff; background: #ea5414;}

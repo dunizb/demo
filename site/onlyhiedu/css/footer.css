@@ -1,0 +1,114 @@
+#footer {
+  background: url("../images/footer/footer-bg2.png") center top no-repeat;
+  /*
+  .footer-logo{
+    //background: url("logo2.png") no-repeat center;
+    width: 219px;
+    height: 40px;
+    position: absolute;
+    top: 55px;
+    left: 49%;
+    //margin-left: -115px;
+  }
+  p{
+    position: relative;
+    top:123px;
+    font-size: 36px;
+    color: #fff;
+    span{
+      color: #ffcf0b;
+    }
+  }
+    */
+}
+#footer .public-center {
+  width: 1281px;
+  position: relative;
+  left: 50%;
+  margin-left: -640px;
+}
+#footer .right {
+  position: relative;
+  top: 236px;
+  font-size: 23px;
+  color: #fff;
+}
+#footer .right a {
+  text-decoration: none;
+  color: #fff;
+}
+/*footer样式*/
+.footer {
+  height: 120px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  opacity: 0.9;
+}
+.footer-logo {
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  margin-left: -85px;
+}
+.footer-logo-text1 {
+  width: 334px;
+  height: 40px;
+  font-size: 26px;
+  font-family: "微软雅黑";
+  color: #FFF;
+  position: absolute;
+  top: 52px;
+  left: 46%;
+  margin-left: -128px;
+}
+.footer-logo-text2 {
+  font-size: 18px;
+  font-family: "微软雅黑";
+  color: #fff;
+}
+.footer-logo-text2 {
+  width: 1005px;
+  height: 30px;
+  position: absolute;
+  top: 255px;
+  left: 50%;
+  margin-left: -457px;
+}
+.Login-bottom {
+  width: 950px;
+  height: 95px;
+  padding-top: 84px;
+  margin: 0px auto;
+}
+.input-box {
+  height: 25px;
+  border-radius: 0;
+  padding-left: 5px;
+  margin-right: 10px;
+  font-family: '微软雅黑';
+  font-size: 12px;
+}
+.text-box {
+  width: 112px;
+}
+.select-box {
+  width: 81px;
+}
+.buttn-login {
+  width: 71px;
+  height: 25px;
+  background: #fc4800;
+  border: 0;
+  color: #fff;
+  font-size: 12px;
+  font-family: "微软雅黑";
+  font-weight: bold;
+  cursor: pointer;
+}
+.footer-bk {
+  height: 150px;
+  width: 100%;
+  background-color: #393636;
+  float: left;
+}
