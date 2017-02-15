@@ -1,0 +1,214 @@
+*{
+    /*background-color: rgba(0,0,0,.1);*/
+    font-family: 'Microsoft YaHei';
+    box-sizing: border-box;
+    transition: background .2s;
+}
+
+body{
+    background-color: rgba(95,114,204,1);
+    color: #fff;
+}
+
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1{
+    text-align: center;
+}
+
+.task_list{
+    margin: 10px 0;
+}
+
+input,
+.task_item,
+.task_detail,
+.task_detail_mask,
+textarea,
+button{
+    padding: 10px;
+    border-radius: 3px;
+}
+
+button,
+input[type="text"],input[type="date"]{
+    border: 0;
+}
+
+textarea,
+input[type="text"],input[type="date"]{
+    display: block;
+    width: 100%;
+    background-color: #ddd;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+textarea{
+    min-height: 80px;
+}
+
+textarea:hover,
+textarea:focus,
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="date"]:hover,
+input[type="date"]:focus{
+    background-color: #eee;
+    outline: 0; /** 去除边框阴影 */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+button{
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+}
+
+.add_task input[type="text"]{
+    float: left;
+    width: 84%;
+    margin-right: 1%;
+}
+button.primary,
+[type="submit"]{
+    background-color: #46b1ea;
+}
+.add_task [type="submit"]{
+    width: 15%;
+}
+.add_task [type="submit"],
+.task_item{
+    box-shadow: 0 2px 3px rgba(0,0,0,.4);
+}
+.add_task [type="submit"]:hover{
+    background-color: #199be0;
+}
+
+
+.task_item{
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+    margin-bottom: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+    overflow: auto;
+}
+.task_item:hover{
+    background: #ddd;
+}
+.task_item.completed{
+    color: #aaa;
+    background-color: rgba(255, 255, 255, .8);
+}
+.task_item.completed:after{
+    content: ' ';
+    height: 1px;
+    background-color: #aaa;
+    width: 80%;
+    position: relative;
+    top: 11px;
+    display: block;
+    margin-left: 23px;
+}
+.task_item .task_item_content{
+    width: 80%;
+    float: left;
+}
+.task_item .task_item_operation{
+    width: 20%;
+    float: right;
+    text-align: right;
+}
+.task_item .task_item_operation span{
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.task_detail,
+.task_detail_mask{
+    position: absolute;
+    display: none;
+}
+
+.task_detail{
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    background-color: #fff;
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+    color: #333;
+    border-radius: 3px 0 0 3px;
+    box-shadow: 0 1px 2px 1px rgba(0,0,0,.1)
+}
+
+.task_detail .content{
+    padding: 10px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.task_detail .input_item{
+    padding: 10px;
+}
+
+.task_detail_mask{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(30,30,30,.6);
+}
+
+span.del{
+    background-color: #f33a3a;
+}
+span.del:hover{
+    background-color: #fb0505;
+}
+span.detail{
+    background-color: #3bad3b;
+}
+span.detail:hover{
+    background-color: #024402;
+}
+
+.msg{
+    display: none;
+    overflow: hidden;
+    text-align: center;
+    background-color: #ffe264;
+    padding: 10px;
+    color: #333;
+}
+.msg .msg-content{
+    float: left;
+}
+.msg .anchor{
+    float: right;
+    cursor: pointer;
+    font-size: 12px;
+    background: chartreuse;
+    padding: 3px 5px;
+    border-radius: 10%;
+}
+.alert{
+    width: 0;
+    height: 0;
+}
+
+.modal-confirm .pop-content{font-size: 20px;}
+.modal-confirm .btn{
+    position: absolute;
+    padding-right:5px;
+    right: 0;
+    bottom: 5px;
+}
+.modal-confirm .btn button{width: 100px;}
