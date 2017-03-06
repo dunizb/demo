@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>慕课网云端</title>
+    <link rel="stylesheet" href="css/base-myl.css"/>
+    <link rel="stylesheet" href="css/index-myl.css"/>
+    <link type="image/x-icon" rel="shortcut icon" href="favicon.ico"/>
+    <link type="text/css" rel="stylesheet" href="css/lrtk.css"/>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+
+        $(function () {
+            $(".main h2").animate({
+                "margin": "20px auto  35px",
+                "opacity": 1
+            }, 1000, function () {
+                $(".main p").animate({
+                    "opacity": 1,
+                    "padding":"20px auto 40px"
+                });
+            });
+            $(window).scroll(function () {
+                console.log($(window).scrollTop());
+                if ($(window).scrollTop() >= 100) {
+                    $(".nav").css("backgroundColor", "white");
+                    $(".nav a").css("color", "black")
+                } else {
+                    $(".nav").css("background","rgba(0,0,0,0.3)");
+                    $(".nav a").css("color", "white")
+                }
+
+                if ($(window).scrollTop() >= 300) {
+                    $(".menu h2").animate({
+                        "opacity": 1,
+                        "margin":"170px auto 40px"
+                    }, 1000, function () {
+                        $(".menu  p").animate({
+                            "opacity": 1
+                        });
+                    });
+                }
+                ;
+                if ($(window).scrollTop() >= 1000) {
+                    $(".hot h2").animate({
+                        "opacity": 1,
+                        "padding":"30px auto 50px"
+                    }, 1000, function () {
+                        $(".hot p").animate({
+                            "opacity": 1,
+                            "padding":"20px auto 50px"
+                        });
+                    });
+                }
+                if ($(window).scrollTop() >= 1400) {
+                    $(".sqi h2").animate({
+                        "opacity": 1,
+                        "padding":"50px auto 50px"
+                    }, 1000, function () {
+                        $(".sqi p").animate({
+                            "opacity": 1
+                        }, 1000);
+                        $(".sqi-l").animate({
+                            "opacity": 1,
+                            "padding":"40px auto 50px"
+                        })
+                    });
+                }
+                if ($(window).scrollTop() >= 2000) {
+                    $(".tips h2").animate({
+                        "opacity": 1,
+                        "padding":"50px auto 50px"
+                    }, 1000, function () {
+                        $(".tips .w .tips-img").slideDown(1000)
+                    });
+                }
+
+
+                $(".weixin").mouseenter(function () {
+
+                    $(".weixin span").css("display", "block");
+                });
+                $(".weixin").mouseout(function () {
+
+                    $(".weixin span").css("display", "none");
+                });
+            });
+
+            // 返回顶部小火箭
+            $(window).scroll(function() {
+                if($(window).scrollTop() >= 100){ //向下滚动像素大于这个值时，即出现小火箭~
+                    $('.actGotop').fadeIn(300); //火箭淡入的时间，越小出现的越快~
+                }else{
+                    $('.actGotop').fadeOut(300); //火箭淡出的时间，越小消失的越快~
+                }
+            });
+            //火箭动画停留时间，越小消失的越快~
+            $('.actGotop').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);});
+        })
+    </script>
+
+</head>
+<body>
+<!--导航栏-->
+<div class="nav">
+    <div class="log">
+        <a href="index.html">慕课网实战课程</a>
+    </div>
+    <div class="r-nav">
+        <ul>
+            <li><a href="sz.html">实战课程</a></li>
+            <li><a href="student.html">学习体验</a></li>
+            <li><a href="zg_index.html">WebIDE</a></li>
+            <li><a href="javascript:;">Git版本管理</a></li>
+            <li class="icon"><a href="#">云端服务</a></li>
+            <li class="cor"><a href="#" class="btn-start">开始学习</a></li>
+        </ul>
+    </div>
+</div>
+<!--main部分开始-->
+<div class="main">
+    <div class="w">
+        <h2>一键开启云端服务，所有代码在线预览</h2>
+
+        <p>进入课程，填写自定义域名后，服务器即可为你分配一个独立后端运行环境</p>
+    </div>
+</div>
+<!--main部分结束-->
+<!--menu开始-->
+<div class="menu">
+    <div class="w">
+        <h2>
+            终端命令行登录云端环境、随意配置
+            <div class="line"></div>
+        </h2>
+        <p>
+            WebIDE提供的终端功能</br></br>
+            可以随时随地通过命令行控制云端服务器的配置，调试你需要的环境
+        </p>
+
+        <div class="page2">
+            <img src="images/page2.png" alt=""/>
+        </div>
+    </div>
+</div>
+<!--menu结束-->
+<!--hot开始、-->
+<div class="hot">
+    <div class="w">
+        <div class="guide">
+            <h2>云端环境支持各类型语言</h2>
+
+            <div class="line"></div>
+            <p>现已支持HTML5、PHP、JAVA、Python、Node.js等语言和示例项目</p>
+        </div>
+        <ul>
+            <li class="icon-1">PHP</li>
+            <li class="icon-2">JAVA</li>
+            <li class="icon-3">Python</li>
+            <li class="icon-4">Node.js</li>
+            <li class="icon-5">HTML 5</li>
+        </ul>
+    </div>
+</div>
+<!--hot结束、-->
+
+<!--sqi开始-->
+<div class="sqi">
+    <div class="w">
+        <div class="sqi-l">
+            <div class="sqi-r">
+                <h2>数据库支持</h2>
+
+                <div class="line"></div>
+                <p>目前已支持Mysql、MongoDB、PostgreSQL</br></br>
+                    每一个数据库都配有单独的密码，避免被他人连接</p>
+                <ul>
+                    <li><img src="images/page4_1.png" alt=""/></li>
+                    <li><img src="images/page4_2.png" alt=""/></li>
+                    <li><img src="images/page4_3.png" alt=""/></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--sqi结束-->
+
+<!--tips开始-->
+<div class="tips">
+    <div class="w">
+        <h2>每个项目都配有单独域名
+        </h2>
+
+        <div class="line"></div>
+        <p>
+            云服务都配有单独域名，支持在线项目演示；通过浏览器访问，
+            更可通过二维码扫描，随时访问你的项目</p>
+
+        <div class="tips-img"></div>
+    </div>
+</div>
+<!--tips结束-->
+
+<!--study开始-->
+<div class="study">
+    <div class="learn">
+        <a href="javascript:;">开始学习</a>
+    </div>
+</div>
+<!--study结束-->
+
+<!--footer开始-->
+<div class="footer">
+    <div class="w">
+        <div class="footer-left">
+            <ul>
+                <li><a href="javascript:;">网站首页</a></li>
+                <li><a href="javascript:;">人才招聘</a></li>
+                <li><a href="javascript:;">联系我们</a></li>
+                <li><a href="javascript:;">高校联盟</a></li>
+                <li><a href="javascript:;">关于我们</a></li>
+                <li><a href="javascript:;">讲师招募</a></li>
+                <li><a href="javascript:;">意见反馈</a></li>
+                <li><a href="javascript:;">友情链接</a></li>
+            </ul>
+            <p>Copyright © 2015 imooc.com All Rights
+                Reserved | 京ICP备 13046642号-2</p>
+        </div>
+        <div class="footer-right">
+            <a href="javascript:;" class="weixin">
+                <span class="weixin-box"></span>
+            </a>
+            <a href="javascript:;" class="xinlang"></a>
+            <a href="javascript:;" class="qq"></a>
+        </div>
+    </div>
+
+</div>
+
+<!-- 返回顶部小火箭 -->
+<div class="actGotop"><a href="javascript:;" title="Top"></a></div>
+<!--footer结束-->
+
+</body>
+
+</html>

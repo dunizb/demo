@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>简单轮播图|Demos 代码演示、代码片段 - 读你 | 这世间唯有梦想和好姑娘不可辜负!</title>
+    <meta name="Keyword" content="轮播图,代码演示,代码片段,HTML5,CSS3,JavaScript,jQuery,Bootstrap">
+    <meta name="Author" content="dunizb">
+    <meta name="website" content="http://www.mybry.com">
+    <meta name="Description" content="Demos 代码演示、代码片段 - 读你 | 这世间唯有梦想和好姑娘不可辜负!">
+	<style>
+  *{margin:0;padding:0;list-style:none;}
+  .wrap{height:170px;width:490px;overflow: hidden;position: relative;margin:100px auto;}
+  .wrap ul{position:absolute;width:2480px;transition:all .5s;} 
+  .wrap ul li{height:170px; float: left;}
+  .wrap ul li img {width:490px;height:170px;}
+  .wrap ol{position:absolute;right:5px;bottom:10px;}
+  .wrap ol li{height:20px; width: 20px;background:#ccc;border:solid 1px #666;margin-left:5px;
+              color:#000;float:left;line-height:center;text-align:center;cursor:pointer;}
+  .wrap ol .on{background:#E97305;color:#fff;}
+  .loding {width:200px;font-size:12px;text-align:center;background-color:green;color:#fff;line-height:20px;}
+
+  </style>
+  <script src="../js/animate.js"></script>
+  <script type="text/javascript">
+  // loding动画
+  document.write('<div id="loding" name="green" class="loding">页面加载中，请稍后。。。。</div>');
+  animateTools.loding();
+
+  window.onload=function(){
+      // 关闭loding动画
+      animateTools.closeLoding();
+
+      var wrap=document.getElementById('wrap'),
+          pic=document.getElementById('pic'),
+          list=document.getElementById('list').getElementsByTagName('li'),
+          index=0,  //索引
+          timer=null, //定时器
+          imgWidth = pic.children[0].offsetWidth; // 图片的宽度
+
+      // 自动播放
+      function auto(){
+          timer = setInterval(function(){
+              index++;
+              if(index >= list.length){
+                  index = 0;
+              }
+              change(index);
+          },2000);  
+      }
+
+      auto();
+
+      // 改变位置
+      function change(curIndex){
+          pic.style.marginLeft = -imgWidth * curIndex + 'px';
+          for(var n=0; n<list.length; n++){
+              list[n].className = '';
+          }
+          list[curIndex].className = 'on';
+          index = curIndex;
+      }
+
+      wrap.onmouseover=function(){
+          clearInterval(timer);
+      };
+
+      wrap.onmouseout = auto;
+      
+      for(var i=0;i<list.length;i++){
+          list[i].id=i;
+          list[i].onmouseover=function(){
+              change(this.id); 
+          };       
+      }
+  };
+
+  </script>	
+</head>
+<body>
+
+  <div class="wrap" id='wrap'>
+    <ul id="pic">
+      <li><img src="images/1.jpg" style="width:490px;height:170px" alt=""></li>
+      <li><img src="images/2.jpg" style="width:490px;height:170px" alt=""></li>
+      <li><img src="images/3.jpg" style="width:490px;height:170px" alt=""></li>
+      <li><img src="images/4.jpg" style="width:490px;height:170px" alt=""></li>
+      <li><img src="images/5.jpg" style="width:490px;height:170px" alt=""></li>    
+    </ul>
+    <ol id="list">
+      <li class="on">1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ol>
+  </div>
+</body>
+</html>

@@ -1,0 +1,317 @@
+/*主图片部分开始*/
+.page {
+    background-image: url(../images/ide/page1.1.jpg);
+    background-size: 100% 100%;
+    height: 640px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.page .w ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4320px;
+}
+.page .w li {
+    width: 1440px;
+    height: 640px;
+    overflow: hidden;
+    float: left;
+}
+.page .w h2 {
+    position: absolute;
+    top: 260px;
+    left: 317px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 36px;
+    color: white;
+    opacity: 0;
+}
+.page .w p {
+    font-size: 16px;
+    line-height: 28px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 454px;
+    top: 326px;
+    opacity: 0;
+}
+/*主图片部分结束*/
+
+/*轮播图开始*/
+#arr {
+    display: none;
+}
+
+#arr span {
+    width: 40px;
+    height: 80px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -20px;
+    background: #000;
+    cursor: pointer;
+    line-height: 80px;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.3;
+    border: 1px solid #fff;
+}
+
+#arr #right {
+    right: 5px;
+    left: auto;
+}
+/*轮播图结束*/
+
+/*page-1部分开始*/
+.page-1 {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background-color: #f3f5f7;
+}
+.page-1 .icon-1 {
+    background: url("../images/ide/page1_1.png") no-repeat bottom center;
+    height: 470px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    overflow: hidden;
+    display: none;
+}
+.page-1 .icon-2 {
+    background: url("../images/ide/page1_2.png") no-repeat bottom center;
+    bottom: 38px;
+    width: 100%;
+    height: 470px;
+    left: 30px;
+    position: absolute;
+    z-index: 10;
+    display: none;
+
+}
+.page-1 .icon-3 {
+    background: url("../images/ide/page1_3.png") no-repeat bottom center;
+    width: 100%;
+    height: 470px;
+    position: absolute;
+    bottom: 5px;
+    left: -50px;
+    z-index: 11;
+    display: none;
+}
+/*page-1部分结束*/
+
+/*page-2部分开始*/
+.page-2 {
+    height: 580px;
+    background-color: #f3f5f7;
+    position: relative;
+}
+.page-2 h2 {
+    position: absolute;
+    font-size: 36px;
+    line-height: 32px;
+    font-weight: bold;
+    left: 50%;
+    top: 110px;
+    color: black;
+    margin: 80px auto 35px;
+}
+.page-2 .line {
+    position: absolute;
+    left: 50%;
+    top: 262px;
+    width: 50px;
+    height: 3px;
+    background-color: #00c1ae;
+}
+.page-2 p {
+    position: absolute;
+    left: 50%;
+    top: 295px;
+    font-size: 16px;
+    color: #4d5559;
+}
+.page-2 .icon-1 {
+    width: 438px;
+    height: 359px;
+    position: absolute;
+    left: 65px;
+    top: 85px;
+    background: url("../images/ide/page2.png") no-repeat ;
+    display: none;
+}
+.page-2 .icon-2 {
+    width: 356px;
+    height: 384px;
+    position: absolute;
+    left: 100px;
+    top: 999px;
+    background-image: url("../images/ide/page2_1.png");
+    display: none;
+}
+/*page-2部分结束*/
+
+/*page-3部分开始*/
+.page-3 {
+    background-color: #f3f5f7;
+    background: url(../images/ide/page3.jpg) no-repeat center top;
+}
+.page-3 .container {
+    width: 1200px;
+    height: 640px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.page-3 h2 {
+    margin: 350px auto 0;
+    text-align: center;
+    font-size: 36px;
+    line-height: 32px;
+    font-weight: bold;
+    color: #000;
+}
+.page-3 .line {
+    width: 50px;
+    height: 3px;
+    background-color: #00c1ae;
+    margin: 30px auto;
+}
+.page-3 p {
+    text-align: center;
+    color: #4d5559;
+    font-size: 16px;
+    line-height: 28px;
+}
+.page-3 .icon-1 {
+    width: 180px;
+    height: 200px;
+    margin-left: -90px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    background: url("../images/ide/page3_1.png") no-repeat;
+    display: none;
+
+}
+/*page-3部分结束*/
+
+/*page-4部分开始*/
+.page-4 {
+    background-color: #00b33b;
+    overflow: hidden;
+    position: relative;
+}
+.page-4 .container {
+    width: 1200px;
+    height: 640px;
+    margin: 0 auto;
+}
+.page-4 h2 {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 80px auto 35px;
+    line-height: 32px;
+    position: absolute;
+    top: 140px;
+}
+.page-4 .line {
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: 294px;
+}
+.page-4 p {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 28px;
+    position: absolute;
+    top: 315px;
+}
+.page-4 .icon-1 {
+    width: 50%;
+    height: 640px;
+    position: absolute;
+    left: 100%;
+    bottom: 0px;
+    background: url("../images/ide/page4.png") no-repeat left bottom;
+    background-size: auto 90%;
+}
+/*page-4部分结束*/
+
+/*page-5部分开始*/
+.page-5 {
+    background: url("../images/ide/page5.jpg") no-repeat center center;
+    background-color: #000000;
+    position: relative;
+    width: 100%;
+    height: 640px;
+}
+.page-5 .container {
+    width: 1200px;
+    height: 640px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    /*display: none;*/
+    opacity: 0;
+}
+.page-5 h2 {
+    margin: 230px auto 0;
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 32px;
+
+}
+.page-5 .line {
+    width: 50px;
+    height: 3px;
+    background-color: #00c1ae;
+    margin: 30px auto;
+
+}
+.page-5 p {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 28px;
+
+
+}
+/*page-5部分结束*/
+
+/*page-btn部分开始*/
+.page-btn {
+    height: 130px;
+    text-align: center;
+    padding-top: 70px;
+}
+.page-btn a {
+    display: inline-block;
+    height: 58px;
+    line-height: 58px;
+    padding: 0 47px;
+    border: 1px solid #707070;
+    border-radius: 3px;
+    font-size: 18px;
+    color: black;
+}
+.page-btn a:hover {
+    color: #C81623;
+}
+/*page-btn部分解释*/

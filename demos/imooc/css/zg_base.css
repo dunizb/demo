@@ -1,0 +1,245 @@
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button { 			/*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;				/*清除列表风格*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;			/*合并外边线*/
+}
+
+
+body {
+    font: 14px/1.5 "Microsoft Yahei", "Hiragino Sans GB", Helvetica, "Helvetica Neue", "微软雅黑", Tahoma, Arial, sans-serif;
+    color: #666;
+    background: #fff
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+
+/*顶部导航开始*/
+.header-nav {
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    display: none;
+}
+.header-logo .logo {
+    height: 40px;
+    margin: 10px  0 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 50px;
+    line-height: 40px;
+    color: white;
+    background: url("../images/ide/logo.png") no-repeat;
+}
+.header-nav .r-item {
+    margin-top: 10px;
+    padding-right: 10px;
+}
+.header-nav .r-item a {
+    float: left;
+    margin: 0px 20px;
+    line-height: 40px;
+    font-size: 14px;
+    color: white;
+}
+.header-nav .r-item .web {
+    border-bottom: 2px solid red;
+}
+.header-nav .r-item a:hover {
+    border-bottom: 2px solid red;
+}
+.header-nav .r-item .btn-start {
+    background-color: #f01400;
+    padding: 0 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0px;
+}
+.header-nav .r-item .btn-start:hover {
+    border: none;
+    background-color: #C71313;
+}
+/*顶部导航结束*/
+
+/*footer部分开始*/
+.footer {
+    height: 80px;
+    padding-top: 25px;
+    background-color: #000;
+}
+.footer-l ul {
+    padding-left: 40px;
+}
+.footer-l ul li {
+    float: left;
+    text-align: center;
+    margin-right: 30px;
+}
+.footer-l ul li a {
+    font-size: 12px;
+    color: #c8cdd2;
+}
+.footer-l ul li a:hover {
+    color: white;
+}
+.footer-l p {
+    padding-left: 40px;
+    color: #4d5559;
+    height: 27px;
+    line-height: 27px;
+    font-size: 16px;
+    margin-top: 4px;
+}
+.footer-r {
+    margin-right: 34px;
+    padding-left: 30px;
+}
+.footer-r .footer-r-weixin {
+    float: left;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 3px 6px 0;
+    opacity: 0.5;
+    background: url(../images/ide/footer-sprite.png) no-repeat 0 -279px;
+}
+.footer-r .footer-r-weibo {
+    float: left;
+    position: relative;
+    margin: 3px 6px 0;
+    opacity: 0.5;
+    width: 32px;
+    height: 32px;
+    background: url("../images/ide/footer-sprite.png") no-repeat 0 -321px;
+}
+.footer-r .footer-r-qzone {
+    float: left;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 3px 6px 0;
+    opacity: 0.5;
+    background: url("../images/ide/footer-sprite.png") no-repeat 0 -363px;
+}
+.footer-r .footer-r-weixin .weixin-box {
+    position: absolute;
+    width: 170px;
+    width: 170px;
+    height: 220px;
+    left: -69px;
+    bottom: 35px;
+    background: url("../images/ide/footer-sprite.png") no-repeat 0 0;
+    opacity: 1;
+    display: none;
+}
+/*footer部分结束*/
+

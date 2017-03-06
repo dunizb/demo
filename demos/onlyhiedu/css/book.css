@@ -1,0 +1,106 @@
+#mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 20000;
+}
+#mask .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: 1px #7d7676 solid;
+  border-radius: 3px;
+  width: 14px;
+  height: 14px;
+  line-height: 15px;
+}
+#mask .dialog {
+  z-index: 30000;
+  position: absolute;
+  display: inline-block;
+  width: 800px;
+  height: 300px;
+  top: 50%;
+  margin-top: -150px;
+  left: 50%;
+  margin-left: -400px;
+}
+#mask .dialog .book-title {
+  font-size: 24px;
+  text-align: center;
+  padding: 25px 0 15px;
+  color: #f37065;
+}
+#mask .dialog .item {
+  margin: 20px auto;
+}
+#mask .dialog input,
+#mask .dialog select {
+  font-size: 14px;
+  padding: 0 10px;
+  height: 30px;
+  border: 1px solid #adadad;
+  outline: 0;
+  border-radius: 2px;
+  background: #f5f5f5;
+  width: 160px;
+}
+#mask .dialog select {
+  width: 182px;
+  padding: 0;
+}
+#mask .dialog #send {
+  display: inline-block;
+  width: 160px;
+  height: 32px;
+  padding: 0;
+  line-height: 32px;
+  background: #f37065;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+}
+#mask .dialog label {
+  display: inline-block;
+  text-align: left;
+  width: 70px;
+}
+#mask .dialog .left,
+#mask .dialog .right {
+  float: left;
+  display: inline-block;
+}
+#mask .dialog .left img,
+#mask .dialog .right img {
+  width: 70%;
+  vertical-align: middle;
+}
+#mask .dialog .left:after,
+#mask .dialog .right:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+}
+#mask .dialog .left {
+  width: 500px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+#mask .dialog .right {
+  position: relative;
+  width: 300px;
+  height: 100%;
+  background-color: #ffffff;
+}
+#mask .dialog:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
