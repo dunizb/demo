@@ -229,9 +229,9 @@ s, i, em {
 
 .title {
     text-align: center;
-    height: 32px;
     font: 400 16px/32px "Microsoft YaHei";
 }
+.title .github-btn { margin: 10px auto; }
 .items {
     text-align: center;
     line-height: 195px;
