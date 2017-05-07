@@ -20,12 +20,6 @@
         margin: 0;
         padding: 0;
     }
-    @media only screen and (min-width: 30.0625em) and (max-width: 50em) {/*中型屏幕*/
-        html { font-size: 45.5%; }
-    }
-    @media only screen and (max-width: 30em) {/*小屏幕*/
-        html { font-size: 33.5%; }
-    }
     .content {
         height: 70%;
         font-size: 18rem;
@@ -46,19 +40,24 @@
         overflow-x: auto;
     }
     p.info{
-        height: 1%;
         font-size: 1rem;
         line-height: 1rem;
         text-align: center;
     }
     .item {
-        display: inline-block;
+        display: table-cell;
         height: 10rem;
         border: 2px solid #fff;
     }
     .item img {
         width: 10rem;
         height: 10rem;
+    }
+    @media only screen and (min-width: 30.0625em) and (max-width: 50em) {/*中型屏幕*/
+        html { font-size: 45.5%; }
+    }
+    @media only screen and (max-width: 30em) {/*小屏幕*/
+        html { font-size: 33.5%; }
     }
     </style>
 </head>
