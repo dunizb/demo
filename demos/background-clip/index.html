@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>3D方块|Demos 代码演示、代码片段 - 读你 | 这世间唯有梦想和好姑娘不可辜负!</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+    <meta name="Keyword" content="代码演示,代码片段,HTML5,CSS3,JavaScript,jQuery,Bootstrap">
+    <meta name="Author" content="dunizb">
+    <meta name="website" content="http://dunizb.com">
+    <meta name="Description" content="Demos 代码演示、代码片段 - 读你 | 这世间唯有梦想和好姑娘不可辜负!">
+    <style>
+    html{
+        height: 100%;
+        font-size: 62.5%;
+    }
+    body{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    @media only screen and (min-width: 30.0625em) and (max-width: 50em) {/*中型屏幕*/
+        html { font-size: 45.5%; }
+    }
+    @media only screen and (max-width: 30em) {/*小屏幕*/
+        html { font-size: 33.5%; }
+    }
+    .content {
+        height: 70%;
+        font-size: 18rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: transparent;
+        background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494750361&di=434a3e7a3000c5c7a7e58fb7e69e8949&imgtype=jpg&er=1&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fa%2F5461a9926efee.jpg');
+        background-repeat: no-repeat;
+        background-origin: center center;
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip:text;
+    }
+    .images {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 29%;
+        border-top: 1px solid deeppink;
+        overflow-x: auto;
+    }
+    p{
+        height: 1%;
+        font-size: 1rem;
+        line-height: 1rem;
+        text-align: center;
+    }
+    .item {
+        border: 2px solid #fff;
+    }
+    .item img {
+        width: 10rem;
+        height: 10rem;
+    }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <span> clip:text </span>
+    </div>
+    <p>点击背景图片查看效果</p>
+    <div class="images">
+        <div class="item">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494750361&di=434a3e7a3000c5c7a7e58fb7e69e8949&imgtype=jpg&er=1&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fa%2F5461a9926efee.jpg" alt="1">
+        </div>
+        <div class="item">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494163026652&di=31e11aa4b710b3443a5c88efb8ea75bf&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F17%2F14%2F25%2F43Y58PICfJB_1024.jpg" alt="2">
+        </div>
+        <div class="item">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494164933045&di=1ad55c8f3734720b12a693fa8b3ee8d9&imgtype=0&src=http%3A%2F%2Fimg3.redocn.com%2Ftupian%2F20160120%2Flanlvsejianbiantiaowenbeijing_5786675.jpg" alt="3">
+        </div>
+        <div class="item">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1494153112&di=d5190920b8c6aca989be73bd524ec088&src=http://pic41.nipic.com/20140504/17940972_194559694163_2.jpg" alt="4">
+        </div>
+        <div class="item">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1494153191&di=aca5c94e35d5a0179302476c44a37aa1&src=http://img.sccnn.com/bimg/338/14796.jpg" alt="5">
+        </div>
+    </div>
+</body>
+<script>
+    window.onload = function() {
+        changeImage();
+    }
+    var imageArray = document.querySelectorAll('img');
+    var content = document.querySelector('.content');
+
+    var changeImage = function() {
+        for(var i = 0; i < imageArray.length; i++) {
+            imageArray[i].onclick = function() {
+                content.style.backgroundImage = "url("+this.src+")";
+            }
+        }
+    }
+</script>
+</html>
