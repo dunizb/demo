@@ -164,12 +164,24 @@ s, i, em {
     line-height: 46px;
     margin-bottom: 10px;
 }
-.nav .brand{
-     text-align: center;
+.nav .logo{
+    height: 100px;
+    text-align: center;
 }
-.nav .brand h1{
-    height: 0;
+.nav .logo a{
+    display: block;
 }
+.nav .logo h1{
+    background: url(http://dunizb.com/img/avatar.gif) no-repeat;
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    background-size: contain;
+    border-radius: 50%;
+    border: 1px solid red;
+    text-indent: -10000px;
+}
+.nav .logo h2{line-height: 25px;}
 .nav ul.main-nav{
     display: flex;
     justify-content: center;
