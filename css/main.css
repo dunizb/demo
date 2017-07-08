@@ -160,18 +160,21 @@ s, i, em {
     nav部分
 ***************************/
 .nav {
-    height: 44px;
     line-height: 46px;
-    color: #fff;
-    background-color: #169FE6;
     margin-bottom: 10px;
+}
+.nav .brand{
+     text-align: center;
+}
+.nav .brand h1{
+    height: 0;
 }
 .nav ul.main-nav{
     display: flex;
     justify-content: center;
+    background-color: #169FE6;
+    color: #fff;
 }
-.nav ul.main-nav li.brand-logo img{ width: 68px;vertical-align: top; }
-.nav ul.main-nav li.brand-logo span {font-size: 24px;}
 .nav ul.main-nav > li {
     float: left;
     text-align: center;
@@ -425,10 +428,29 @@ s, i, em {
 }
 
 @media (max-width: 500px){
-    .nav{
-        display: none;
+    .nav ul.main-nav{
+        display: flex;
+        background-color: #169FE6;
+        color: #fff;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .nav ul.main-nav > li{
+        float: none;
+        text-align: center;
+        padding: inherit;
+        position: relative;
+        width: 25%;
+    }
+    .nav ul.main-nav > li:active{
+        background-color: red;
     }
     .w{width: 100%}
+    .title h2{
+        border-bottom: 2px solid #169FE6;
+        margin-bottom: 10px;
+    }
+    .title .github-btn{display: none;}
     .container-fluid .items{
         width: 90%;
     }
