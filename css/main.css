@@ -169,7 +169,7 @@ s, i, em {
     text-align: center;
 }
 .nav .logo a{
-    display: block;
+    display: inline-block;
 }
 .nav .logo h1{
     background: url(http://dunizb.com/img/avatar.gif) no-repeat;
