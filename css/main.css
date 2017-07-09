@@ -450,6 +450,7 @@ s, i, em {
         padding: inherit;
         position: relative;
         width: 25%;
+        font-size: 14px;
     }
     li .sub-nav{display: none;}
     .nav ul.main-nav > li:active{
