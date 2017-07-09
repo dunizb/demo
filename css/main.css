@@ -453,9 +453,12 @@ s, i, em {
         width: 25%;
         font-size: 14px;
     }
-    /*li .sub-nav{display: none;}*/
+    li .sub-nav{display: none;}
     .nav ul.main-nav > li:active{
         background-color: red;
+    }a
+    .nav ul.main-nav > li:active a{
+        color: #fff;
     }
     .w{width: 100%}
     .title h2{
