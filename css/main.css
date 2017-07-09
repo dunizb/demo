@@ -456,7 +456,7 @@ s, i, em {
     li .sub-nav{display: none;}
     .nav ul.main-nav > li:active{
         background-color: red;
-    }a
+    }
     .nav ul.main-nav > li:active a{
         color: #fff;
     }
