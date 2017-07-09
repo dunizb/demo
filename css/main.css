@@ -167,6 +167,7 @@ s, i, em {
 .nav .logo{
     height: 100px;
     text-align: center;
+    padding: 5px;
 }
 .nav .logo a{
     display: inline-block;
@@ -181,7 +182,7 @@ s, i, em {
     border: 1px solid red;
     text-indent: -10000px;
 }
-.nav .logo h2{line-height: 25px;}
+.nav .logo h2{line-height: 18px;}
 .nav ul.main-nav{
     display: flex;
     justify-content: center;
