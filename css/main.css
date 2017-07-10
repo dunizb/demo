@@ -6,6 +6,7 @@ html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, l
     margin: 0;
     padding: 0;
 }
+html{-webkit-tap-highlight-color:rgba(0,0,0,0);}
 *{box-sizing: border-box;}
 
 fieldset, img, input, button {          /*fieldset组合表单中的相关元素*/
