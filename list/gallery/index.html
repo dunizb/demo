@@ -13,7 +13,7 @@
         ul{list-style: none}       
         li{float: left;width: 100px;height: 100px;overflow: hidden;} 
         .large{width: 100%;height: 100%;position: absolute;top: 0;left:0;background-color: black;}
-        p{color: white;font-size: 24px;}
+        p{color: white;font-size: 24px;text-align: center;}
         @media only screen and (max-width: 30em) {
             p{display: none}
         }
@@ -22,9 +22,12 @@
     <script src="./lib/touch.js"></script>
 </head>
 <body>
-    <p>请用手机模式查看</p>
+    <p>
+        请用手机模式查看或扫一扫<br/>
+        <img src="./qrcode.png" alt="">
+    </p>
     <ul class="img-container" id="container"></ul>
-    <div class="large animated fadeIn" id="large_container" style="display:none;">
+    <div class="large" id="large_container" style="display:none;">
         <img id="large_img" src="" alt="">
     </div>
 
@@ -119,7 +122,7 @@ $("#large_container").tap(function(){
         loadImg(cid, function(){
             domLargeImg.addEventListener('webkitAnimationEnd', function(){
                 largeImg.removeClass('animated bounceInRight');
-                domLargeImg.removeEventListener('webkitAnimationEnd');
+                domLargeImg.removeEventListener('webkitAnimationEnd', function(){});
             }, false);
             largeImg.addClass('animated bounceInRight');
         });
@@ -132,7 +135,7 @@ $("#large_container").tap(function(){
         loadImg(cid, function(){
             domLargeImg.addEventListener('webkitAnimationEnd', function(){
                 largeImg.removeClass('animated bounceInLeft');
-                domLargeImg.removeEventListener('webkitAnimationEnd');
+                domLargeImg.removeEventListener('webkitAnimationEnd', function(){});
             }, false);
             largeImg.addClass('animated bounceInLeft');
         });
