@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的相册</title>
+    <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.css" rel="stylesheet">
+    <style>
+        /** CSS Rest **/
+        body,ul,img,input,h1,h2,h3,h4,h5,h6,dd,dt,li,ol,p{padding: 0;margin: 0}
+        body{background-color: black;max-width: 640px;}
+        ul{list-style: none}       
+        li{float: left;width: 100px;height: 100px;overflow: hidden;} 
+        .large{width: 100%;height: 100%;position: absolute;top: 0;left:0;background-color: black;}
+        p{color: white;font-size: 24px;}
+        @media only screen and (max-width: 30em) {
+            p{display: none}
+        }
+    </style>
+    <script src="http://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+    <script src="./lib/touch.js"></script>
+</head>
+<body>
+    <p>请用手机模式查看</p>
+    <ul class="img-container" id="container"></ul>
+    <div class="large animated fadeIn" id="large_container" style="display:none;">
+        <img id="large_img" src="" alt="">
+    </div>
+
+<script>
+var total = 17;
+var zWin = $(window);
+var render = function() {
+    var padding = 2;
+    var winWidth = zWin.width();
+    var picWidth = Math.floor((winWidth - padding*3)/4);
+    var tmpl = '';
+    for(var i = 1; i < total; i++){
+        var imgSrc = './images/'+ i +'.jpg';
+        var pl = padding;
+        if(i % 4 === 1) pl = 0;
+        tmpl += "<li data-id='"+ i +"' class='animated bounceIn' style='width:"+ picWidth +"px;height:"+ picWidth +"px;padding-left:"+ pl +"px;padding-top:"+ padding +"px'>"
+        +"<canvas id='cvs_"+ i +"'></canvas></li>";
+
+        var imgObj = new Image();
+        imgObj.index = i;
+        imgObj.onload = function() {
+            var cvs = $("#cvs_" + this.index)[0].getContext('2d');
+            cvs.with = imgObj.width;
+            cvs.height = imgObj.height;
+            cvs.drawImage(this, 0, 0);//imgObj，偏移
+        }
+        imgObj.src = imgSrc;
+    }
+
+    $("#container").html(tmpl);
+}
+render();
+
+var largeImg = $("#large_img");
+var domLargeImg = largeImg[0];
+var loadImg = function(id, callback){
+    $("#large_container").css({
+        wdith: zWin.width(),
+        height: zWin.height()
+    }).show();
+
+    var imgSrc = "./images/"+ id +".large.jpg";
+    var imgObj = new Image();
+    imgObj.onload = function() {
+        var w = this.width;
+        var h = this.height;
+        var winWidth = zWin.width();
+        var winHeight = zWin.height();
+
+        // 计算宽高比，为了知道是横图还是竖图
+        var realw = winHeight * w/h; // 图片展示的真实宽度
+        var paddingLeft = parseInt((winWidth - realw)/2);
+        var realh = winWidth * h/w; // 图片展示的真实高度
+        var paddingTop = parseInt((winHeight - realh)/2);
+        largeImg.css({
+            'width': 'auto',
+            'height': 'auto',
+            'padding-left': '0px',
+            'padding-top': '0px'
+        });
+        if(h/w > 1.2){ // 竖图
+            largeImg.attr('src', imgSrc).css({
+                'height': winHeight,
+                'padding-left': paddingLeft
+            });
+        }else{ // 横图
+            largeImg.attr('src', imgSrc).css({
+                'width':winWidth,
+                'padding-top': paddingTop
+            });
+        }
+
+        callback && callback();
+    }
+    imgObj.src = imgSrc;
+}
+
+// 事件代理
+var cid;
+$("#container").delegate('li', 'tap', function(){
+    var _id = cid = $(this).attr("data-id");
+    loadImg(_id);
+});
+
+$("#large_container").tap(function(){
+    $(this).hide();
+}).swipeLeft(function(){
+    cid++;
+    if(cid > total) {
+        cid = total;
+    }else{
+        loadImg(cid, function(){
+            domLargeImg.addEventListener('webkitAnimationEnd', function(){
+                largeImg.removeClass('animated bounceInRight');
+                domLargeImg.removeEventListener('webkitAnimationEnd');
+            }, false);
+            largeImg.addClass('animated bounceInRight');
+        });
+    }
+}).swipeRight(function(){
+    cid--;
+    if(cid < 1) {
+        cid = 1;
+    }else{
+        loadImg(cid, function(){
+            domLargeImg.addEventListener('webkitAnimationEnd', function(){
+                largeImg.removeClass('animated bounceInLeft');
+                domLargeImg.removeEventListener('webkitAnimationEnd');
+            }, false);
+            largeImg.addClass('animated bounceInLeft');
+        });
+    }
+});
+</script>
+</body>
+</html>
