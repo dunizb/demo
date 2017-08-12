@@ -2,9 +2,9 @@ $(function(){
 	require('header.js');
 	var footer = require('footer.js');
 
-	if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-		window.location.href="/mobile/wap";
-	}
+	// if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+	// 	window.location.href="/mobile/wap";
+	// }
 
 	var $form = $("form");
 	var $body = $("body");
