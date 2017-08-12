@@ -2,12 +2,17 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+    <!--优先使用最新版本 IE 和 Chrome-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!--360 使用Google Chrome Frame-->
+    <meta name="renderer" content="webkit">
     <title>Demos 代码演示、代码片段 - 读你 | 这世间唯有梦想和好姑娘不可辜负!</title>
     <meta name="Keyword" content="代码演示,代码片段,HTML5,CSS3,JavaScript,jQuery,Bootstrap">
     <meta name="Author" content="dunizb">
     <meta name="website" content="http://dunizb.com">
     <meta name="Description" content="Demos 代码演示、代码片段 - 读你 | 这世间唯有梦想和好姑娘不可辜负!">
-    <link type="image/x-icon" rel="shortcut icon" href="favicon.ico"/>
+    <link type="image/x-icon" rel="shortcut icon" href="../favicon.ico"/>
     <style>
         body, ul, li, dl, dt, dd, h1, h2, h3, h4, h5 {
             margin: 0;
@@ -17,17 +22,13 @@
         body {
             background-color: #F7F7F7;
         }
-
         .wrapper {
-            width: 1000px;
             margin: 0 auto;
-            padding: 20px;
             box-sizing: border-box;
         }
 
         header {
             padding: 20px 0;
-            margin-bottom: 20px;
             text-align: center;
         }
 
@@ -38,24 +39,23 @@
         }
 
         .main {
-            /*overflow: hidden;*/
-        }
-
-        .main:after {
-            content: '';
-            clear: both;
-            display: block;
+            display: flex;
+            flex-wrap: wrap;
         }
 
         .main .item {
-            width: 210px;
-            height: 210px;
-            margin: 0 30px 30px 0;
+            width: 33.3333%;
+            height: 215px;
+            margin-bottom: 10px;
             display: flex;
+            flex-direction: column;
             position: relative;
             background-color: #FFF;
-            float: left;
-            box-shadow: 2px 2px 5px #CCC;
+            box-shadow: 2px 2px 5px #969292;
+        }
+       .main .item .brief{
+            text-align: center;
+            display: none;
         }
 
         .main .item:after {
@@ -79,7 +79,7 @@
         .main .item:hover:after {
             background-color: rgba(170, 170, 170, 0.6);
             z-index: 100;
-        }
+        }   
 
         .main .item:nth-child(4n) {
             margin-right: 0;
@@ -412,6 +412,16 @@
             /*百分比是按横竖两个对应的方向的长度进行计算*/
         }
 
+        @media only screen and (max-width: 30em) {
+            .wrapper {
+                max-width: 640px;
+            }
+            .main .item {
+                width: 100%;
+            }
+            .main .item .brief{display: block;}
+        }
+
     </style>
 </head>
 <body>
@@ -422,84 +432,111 @@
     <div class="main">
         <div class="item" data-brief="整圆">
             <div class="border-radius"></div>
+            <div class="brief">整圆</div>
         </div>
         <div class="item" data-brief="拱形">
             <div class="border-radius"></div>
+            <div class="brief">拱形</div>
         </div>
         <div class="item" data-brief="半圆">
             <div class="border-radius"></div>
+            <div class="brief">半圆</div>
         </div>
         <div class="item" data-brief="左上角">
             <div class="border-radius"></div>
+            <div class="brief">左上角</div>
         </div>
         <div class="item" data-brief="四分之一圆">
             <div class="border-radius"></div>
+            <div class="brief">四分之一圆</div>
         </div>
         <div class="item" data-brief="横着的椭圆">
             <div class="border-radius"></div>
+            <div class="brief">横着的椭圆</div>
         </div>
         <div class="item" data-brief="竖着的椭圆">
             <div class="border-radius"></div>
+            <div class="brief">竖着的椭圆</div>
         </div>
         <div class="item" data-brief="半个横着的椭圆">
             <div class="border-radius"></div>
+            <div class="brief">半个横着的椭圆</div>
         </div>
         <div class="item" data-brief="半个竖着的椭圆">
             <div class="border-radius"></div>
+            <div class="brief">半个竖着的椭圆</div>
         </div>
         <div class="item" data-brief="四分之一竖着的椭圆">
             <div class="border-radius"></div>
+            <div class="brief">四分之一竖着的椭圆</div>
         </div>
         <div class="item" data-brief="饼环">
             <div class="border-radius"></div>
+            <div class="brief">饼环</div>
         </div>
         <div class="item" data-brief="圆饼">
             <div class="border-radius"></div>
+            <div class="brief">圆饼</div>
         </div>
         <div class="item" data-brief="左上角圆饼">
             <div class="border-radius"></div>
+            <div class="brief">左上角圆饼</div>
         </div>
         <div class="item" data-brief="对角圆饼">
             <div class="border-radius"></div>
+            <div class="brief">对角圆饼</div>
         </div>
         <div class="item" data-brief="四边不同色">
             <div class="border-radius"></div>
+            <div class="brief">四边不同色</div>
         </div>
         <div class="item" data-brief="右透明色">
             <div class="border-radius"></div>
+            <div class="brief">右透明色</div>
         </div>
         <div class="item" data-brief="圆右透明色">
             <div class="border-radius"></div>
+            <div class="brief">圆右透明色</div>
         </div>
         <div class="item" data-brief="圆右红透明色">
             <div class="border-radius"></div>
+            <div class="brief">圆右红透明色</div>
         </div>
         <div class="item" data-brief="阴阳图前世">
             <div class="border-radius"></div>
+            <div class="brief">阴阳图前世</div>
         </div>
         <div class="item" data-brief="阴阳图前世2">
             <div class="border-radius"></div>
+            <div class="brief">阴阳图前世2</div>
         </div>
         <div class="item" data-brief="阴阳图今生">
             <div class="border-radius"></div>
+            <div class="brief">阴阳图今生</div>
         </div>
         <div class="item" data-brief="阴阳图今生2">
             <div class="border-radius"></div>
+            <div class="brief">阴阳图今生2</div>
         </div>
         <div class="item" data-brief="消息框">
             <div class="border-radius"></div>
+            <div class="brief">消息框</div>
         </div>
         <div class="item" data-brief="奇怪的图形">
             <div class="border-radius"></div>
+            <div class="brief">奇怪的图形</div>
         </div>
         <div class="item" data-brief="奇怪的图形2">
             <div class="border-radius"></div>
+            <div class="brief">奇怪的图形2</div>
         </div>
         <div class="item" data-brief="QQ对话">
             <div class="border-radius"></div>
+            <div class="brief">QQ对话</div>
         </div>
         <div class="item" data-brief="圆角百分比">
             <div class="border-radius"></div>
+            <div class="brief">圆角百分比</div>
         </div>
     </div>
 </div>
