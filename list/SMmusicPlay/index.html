@@ -17,6 +17,12 @@
             display: list-item;
             position: relative;
         }
+        #app .info{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -74.445px;
+        }
         @keyframes muiscIconRotate{
             from{transform: rotate(0deg);}
             to{transform: rotate(360deg);}
@@ -24,7 +30,11 @@
     </style>
 </head>
 <body>
-    <div id="app"></div>
+    <div id="app">
+        <div class="info">
+            ☞ <a href="https://github.com/dunizb/SMmuiscPlay" target="_blank">查看GitHu源码</a> ☜
+        </div>
+    </div>
 </body>
 <script src="./js/muisc_play.js"></script>
 <script>
