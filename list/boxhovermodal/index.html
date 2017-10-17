@@ -9,8 +9,17 @@
         *{box-sizing: border-box;}
         .container{
             padding-left: 50px;
-            margin-right: auto;
-            margin-left: auto;
+            width: 640px;
+            margin: 0 auto;
+            overflow: hidden;
+            text-align: center;
+        }
+        .box-wrapper{
+            width: 640px;
+            margin: 0 auto;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
         }
         .box-hover-modal {
             float: left;
@@ -90,7 +99,8 @@
 		<h2>鼠标从box不同方向划入,modal层划入的方向也不同</h2>
 		<hr>
 
-		<div class="box-hover-modal">
+		<div class="box-wrapper">
+            <div class="box-hover-modal">
 			<div class="box-hover-modal-con con1">
                 <div class="info">
                     <p class="t_c">学科教师</p>
@@ -119,6 +129,7 @@
                 <span>03</span>
             </div>
 		</div>
+        </div>
     </div>
 </body>
 <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
